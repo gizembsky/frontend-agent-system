@@ -96,4 +96,23 @@ Eksik dependency veya environment bilgisini blocker olarak bildir.
 - Error, validation ve empty states durumlarını değerlendir.
 - Test sonucunu çalıştırmadan `Passed` olarak işaretleme.
 - Başarısız testi gizleme, silme veya atlama.
-- Flaky testi kesin başarılı kabul etme
+- Flaky testi kesin başarılı kabul etme.
+
+## File Boundary
+
+`edit` aracını yalnızca test, fixture, mock ve test-support dosyalarında kullan. Production kaynak kodunu değiştirme.
+
+## Output Format
+
+Her senaryo için şunları yaz:
+
+- Scenario ve test level
+- Expected result
+- Actual result
+- Command veya method
+- Evidence
+- `Passed`, `Failed` veya `Not Verified`
+
+## Final Status
+
+`Passed`, `Passed with Risks`, `Failed` veya `Blocked`.

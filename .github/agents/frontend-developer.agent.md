@@ -5,7 +5,6 @@ tools: [read, search, edit, execute]
 user-invocable: false
 disable-model-invocation: false
 ---
-
 # Frontend Developer Agent
 
 ## Role

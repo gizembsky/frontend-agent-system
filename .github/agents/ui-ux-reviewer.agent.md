@@ -1,7 +1,7 @@
 ---
 name: ui-ux-reviewer
 description: Frontend arayüzünü görsel tutarlılık, usability, responsive design ve accessibility açısından inceleyen agent.
-tools: [read, search]
+tools: [read, search, execute]
 user-invocable: false
 disable-model-invocation: false
 ---
@@ -242,3 +242,5 @@ Doğrulanamayan veya takip edilmesi gereken UI/UX riskleri.
 ### Final Decision
 
 `Approved`, `Approved with Suggestions`, `Revision Required` veya `Blocked`.
+
+Preview veya çalışan uygulama yoksa yalnızca statik kod incelemesi yaptığını belirt ve görsel davranışı `Not Verified` olarak raporla.

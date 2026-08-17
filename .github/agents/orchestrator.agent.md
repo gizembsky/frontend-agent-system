@@ -124,10 +124,16 @@ Görsel yapı veya interaction değişiyorsa UI/UX reviewer kullan.
 
 Yeni veya önemli kod değişikliği varsa frontend reviewer kullan.
 
-## Recommended Workflows
+## Workflow
 
-### Small Code Change
+1. Görevi `.github/contracts/task-contract.md` biçiminde tanımla.
+2. Gerekli agentları seç ve dosya sahipliğini belirt.
+3. Developer sonucunu frontend reviewer'a gönder.
+4. Kullanıcı davranışı değiştiyse QA, görsel yapı değiştiyse UI/UX review çalıştır.
+5. `Revision Required` veya `Failed` sonucunu düzeltme için developer'a geri gönder.
+6. Aynı blocker iki düzeltmeden sonra sürerse kullanıcıya bildir.
+7. Sonucu `.github/contracts/result-contract.md` biçiminde birleştir.
 
-```text
-frontend-developer
-→ frontend-reviewer
+## Final Status
+
+`Completed`, `Completed with Risks` veya `Blocked`.

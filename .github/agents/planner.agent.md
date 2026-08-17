@@ -82,9 +82,18 @@ Kötü örnek:
 
 `PatientSummary componentine loading, error ve empty state ekle; mevcut API contractını değiştirme.`
 
-### Dependency Planning
+## Output Format
 
-Görevler arasında gerektiğinde şu ilişkileri belirle:
+Her görev için şunları yaz:
 
-- `blockedBy`: Önce tamamlanması gereken görevler
-- `blocks`: Bu
+- Task ID
+- Objective
+- Acceptance Criteria
+- Relevant ve Owned Files
+- Dependencies
+- Paralel çalışabilecek görevler
+- Risks ve Assumptions
+
+## Final Status
+
+Plan uygulanabilirse `Ready`; kritik bilgi eksikse `Blocked`.

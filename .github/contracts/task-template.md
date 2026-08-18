@@ -1,6 +1,6 @@
-# Task Contract
+# Task Template
 
-Orchestrator ve planner görev verirken şu alanları kullanır:
+Orchestrator ve planner görev verirken bu şablonu kullanır:
 
 ```text
 Task ID:
@@ -12,6 +12,7 @@ Read-only Files:
 Dependencies:
 Out of Scope:
 Risks:
+Expected Output:
 ```
 
 Objective tek ve açık olmalıdır. Kritik bilgi eksikse varsayım üretmek yerine blocker bildirilmelidir.

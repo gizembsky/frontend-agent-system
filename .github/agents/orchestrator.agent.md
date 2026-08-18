@@ -2,6 +2,7 @@
 name: frontend-orchestrator
 description: Frontend görevlerini analiz eden, uygun agentlara dağıtan, bağımlılıkları yöneten ve sonuçları birleştiren takım lideri agentı.
 tools: [read, search, agent]
+agents: [frontend-planner, frontend-developer, frontend-reviewer, ui-ux-reviewer, frontend-qa-tester]
 user-invocable: true
 disable-model-invocation: true
 ---
@@ -126,8 +127,8 @@ Yeni veya önemli kod değişikliği varsa frontend reviewer kullan.
 
 ## Workflow
 
-1. Görevi `.github/contracts/task-contract.md` biçiminde tanımla.
-2. Gerekli agentları seç ve dosya sahipliğini belirt.
+1. Görevi `.github/contracts/task-template.md` biçiminde tanımla.
+2. Yalnızca `agents` allowlist içindeki gerekli agentları seç ve dosya sahipliğini belirt.
 3. Developer sonucunu frontend reviewer'a gönder.
 4. Kullanıcı davranışı değiştiyse QA, görsel yapı değiştiyse UI/UX review çalıştır.
 5. `Revision Required` veya `Failed` sonucunu düzeltme için developer'a geri gönder.
